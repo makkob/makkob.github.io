@@ -1,41 +1,289 @@
+
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <!-- Google Tag Manager -->
-    <script>
-      (function (w, d, s, l, i) {
-        w[l] = w[l] || [];
-        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
-        var f = d.getElementsByTagName(s)[0],
-          j = d.createElement(s),
-          dl = l != "dataLayer" ? "&l=" + l : "";
-        j.async = true;
-        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
-        f.parentNode.insertBefore(j, f);
-      })(window, document, "script", "dataLayer", "GTM-MHJVP4Z");
-    </script>
-    <!-- End Google Tag Manager -->
-  </head>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="shortcut icon" href="img/favicon.ico">
+	<!-- Bootstrap CSS https://getbootstrap.com/docs/4.3/getting-started/introduction/ -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<!-- Style.css -->
+	<link rel="stylesheet" href="css/style.css">
+	<!-- Plugins.css -->
+	<link rel="stylesheet" href="css/plugins.css">
+	<!-- Google Fonts https://fonts.google.com/ -->
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
+	<!-- Animate.css https://cdnjs.com/libraries/animate.css/
+		https://daneden.github.io/animate.css/ -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+	<!-- Lightbox Image Gallery https://cdnjs.com/libraries/lightbox2  https://lokeshdhakar.com/projects/lightbox2/ -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css">
+	<!-- Owl Carousel https://cdnjs.com/libraries/OwlCarousel2
+		http://owlcarousel2.github.io/OwlCarousel2/ -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+	<!-- jQuery https://code.jquery.com/ -->
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+	<!-- Bootstrap JS https://getbootstrap.com/docs/4.3/getting-started/introduction/ -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/main.css">
+  <title>Maksym Kobets | Full-stack developer</title>
+</head>
+<body data-spy="scroll" data-target="#navbarResponsive">
 
-  <body>
-    <h1>Test</h1>
-    <button type="button">Button</button>
+	<!-- Start Home Section -->
+	<div id="home">
 
-    <!-- Google Tag Manager (noscript) -->
-    <noscript
-      ><iframe
-        src="https://www.googletagmanager.com/ns.html?id=GTM-MHJVP4Z"
-        height="0"
-        width="0"
-        style="display: none; visibility: hidden"
-      ></iframe
-    ></noscript>
-    <!-- End Google Tag Manager (noscript) -->
+		<!-- Navigation -->
+		<nav class="navbar navbar-expand-lg fixed-top">
+			<div class="container-fluid">
+				<a class="logo" href="index.html">Maksym Kobets</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+					<span class="custom-toggler-icon"><i class="fas fa-bars"></i></span>
+				</button>
 
-    <script src="./task.js" type="module"></script>
-  </body>
+				<div class="collapse navbar-collapse" id="navbarResponsive">
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item active">
+							<a href="index.html" class="nav-link active">Work</a>
+						</li>
+						<li class="nav-item">
+							<a href="about.html" class="nav-link">About</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<!-- End Navigation -->
+
+		<!-- Start Landing Page Image -->
+		<div class="landing">
+			<div class="home-wrap">
+				<div class="home-inner"></div>
+			</div>
+		</div>
+		<!-- End Landing Page Image -->
+
+		<!-- Start Landing Page Caption -->
+		<div class="caption">
+			<div class="caption__container">
+			  <h1>Hello there!</h1>
+			  <h2>I'm Maksym, a full-stack developer specializing in JavaScript, React, Vue, and Quasar for building user-friendly interfaces. I'm experienced with Bootstrap and Material-UI for visually appealing designs. On the back-end, I work with Node.js and databases like MariaDB, MongoDB, and Firebase.</h2>
+			  <h3>Contact me:</h3>
+			  <div class="caption__container__links">
+				<h3><a href="mailto:maksym.kobetss@gmail.com" target="_blank">Email</a></h3>
+				<div class="line"></div>
+				<h3><a href="https://www.linkedin.com/in/maksym-kobets-b90b87253/" target="_blank">Linkedin</i></a></h3>
+				<div class="line"></div>
+				<h3>
+					<a href="./img/Maksym's Resume.pdf" target="_blank">
+						My Resume
+					</a>
+				</h3>
+			</div>
+			</div>
+		  </div>
+		
+		<!-- End Landing Page Caption -->
+
+		<!-- Start Bouncing Down Arrow -->
+		<a href="#features" class="down-arrow text-center">
+			<div class="arrow d-none d-md-block">
+				<i class="fas fa-angle-down"></i>
+			</div>
+		</a>
+		<!-- End Bouncing Down Arrow -->
+
+	</div>
+	<!-- End Home Section -->
+
+	<!-- Start Features Section -->
+	<div id="features" class="offset">
+		<!-- Start Jumbotron -->
+		<div class="jumbotron jumbotron--glow-yoga m-0 py-5">
+			<div class="container">
+				<div class="row text-center px-lg-4 px-xl-5">
+					<div class="container__box col-sm-6 col-md-6 os-animation" data-animation="fadeInLeft">
+						<div class="feature px-2">
+							<img class="cover-img" src="../img/PyvnaGavan/screenshot1.jpg" alt="">
+						</div>
+					</div>
+
+					<div class="container__box col-sm-6 col-md-6 os-animation" data-animation="fadeInRight">
+						<div class="heading heading--glow-yoga">
+							<h3 class="heading__text">
+								Pyvna Gavan (Work in Progress)
+							</h3>
+							<div class="lead">
+								Developing the Front-end and Back-end for the Pyvna Gavan Website<br/>
+								<br/>
+								Technologies Used: React, Redux, JavaScript, Node.js, Express.js, MariaDB<br/>
+								<br/>
+								Key Features: Shopping Cart, Payment Processing, User Dashboard, Sign In, Registration, Telegram Bot Notifications.<br/>
+								<br/>
+								Client: Pyvna Gavan
+							</div>
+							
+              <a onclick="openLinks('https://github.com/TeamITMPM/pyvnagavan', 'https://github.com/TeamITMPM/back_pyvnagavan')" type="button" class="cta" data-aos="fade-in">
+                Git repository</a
+              >
+            </div>
+					</div>
+				</div> <!-- End Row -->
+			</div> <!-- End Container-->
+		</div> <!-- End Jumbotron -->
+	</div>
+	<!-- End of Features Section -->
+
+	<!-- Start Features Section -->
+	<div id="features" class="offset">
+		<!-- Start Jumbotron -->
+		<div class="jumbotron jumbotron--evelina m-0 py-5">
+			<div class="container">
+				<div class="row text-center px-lg-4 px-xl-5">
+					<div class="container__box col-sm-6 col-md-6 os-animation" data-animation="fadeInLeft">
+						<div class="feature px-2">
+							<div class="heading heading--evelina">
+								<h3 class="heading__text">
+									5 Video lessons 
+								</h3>
+								<div class="lead lead--end">
+									Website to watch various video lessons<br/>
+									<br/>
+									Technologies Used: Quasar framework, Pinia (State Manager), TypeScript<br/>
+									<br/>
+									Automatic Video Unlocks When the Video Ends
+
+								</div>
+	
+								<a onclick="openLinks('https://github.com/makkob/5VideoLessons', 'https://makkob.github.io/5VideoLessons/#/')" type="button" class="cta" data-aos="fade-in">
+									View project</a
+								>
+							</div>
+						</div>
+					</div>
+
+					<div class="container__box col-sm-6 col-md-6 os-animation" data-animation="fadeInRight">
+						<img class="cover-img" src="../img/5VideoLessons/screenshot3.jpg" alt="">
+					</div>
+				</div> <!-- End Row -->
+			</div> <!-- End Container-->
+		</div> <!-- End Jumbotron -->
+	</div>
+	<!-- End of Features Section -->
+
+	<!-- Start Features Section -->
+	<div id="features" class="offset">
+		<!-- Start Jumbotron -->
+		<div class="jumbotron jumbotron--cook-it m-0 py-5">
+			<div class="container">
+				<div class="row text-center px-lg-4 px-xl-5">
+					<div class="container__box col-sm-6 col-md-6 os-animation" data-animation="fadeInLeft">
+						<div class="feature px-2">
+							<img class="cover-img" src="../img/CoachAI/Screenshot4.jpg" alt="">
+						</div>
+					</div>
+
+					<div class="container__box col-sm-6 col-md-6 os-animation" data-animation="fadeInRight">
+						<div class="heading heading--cook-it">
+              <h3 class="heading__text">
+                Coach AI 
+              </h3>
+			  <br />
+			  An application to ask an AI coach, using OpenAI Api.
+			  <br/>
+			  Technologies Used:<br/>
+			  Front-end: React, JavaScript<br/>
+			  Back-end: TypeScript, Nest.JS<br/>
+			  <br/>
+
+              <a href="https://github.com/makkob/agile-ai-coach-application" type="button" class="cta" data-aos="fade-in" target="_blank">
+                View repository</a
+              >
+            </div>
+					</div>
+				</div> <!-- End Row -->
+			</div> <!-- End Container-->
+		</div> <!-- End Jumbotron -->
+	</div>
+	<!-- End of Features Section -->
+
+
+	<!-- Start Features Section -->
+	
+	</div>
+	<!-- End of Features Section -->
+
+	<!-- Top Scroll -->
+	<a href="#home" class="top-scroll">
+		<i class="fa fa-angle-up"></i>
+	</a>
+	<!-- End of Top Scroll -->
+
+
+	<!-- Script Source Files -->
+
+	<!-- Plugins.js -->
+	<script src="js/plugins.js"></script>
+	<!-- Waypoints https://cdnjs.com/libraries/waypoints
+		https://github.com/imakewebthings/waypoints -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+	<!-- Font Awesome https://fontawesome.com/  https://use.fontawesome.com/releases/v5.11.2/js/all.js -->
+	<script src="https://use.fontawesome.com/releases/v5.11.2/js/all.js"></script>
+	<!-- Lightbox Image Gallery https://cdnjs.com/libraries/lightbox2  https://lokeshdhakar.com/projects/lightbox2/ -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js"></script>
+	<!-- Owl Carousel https://cdnjs.com/libraries/OwlCarousel2
+		http://owlcarousel2.github.io/OwlCarousel2/ -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+	<!-- jQuery CounterUp https://www.jsdelivr.com/package/npm/jquery.counterup
+		https://github.com/bfintal/Counter-Up2 -->
+	<script src="https://cdn.jsdelivr.net/npm/jquery.counterup@2.1.0/jquery.counterup.min.js"></script>
+	<!-- Bootstrap Form Validator https://cdnjs.com/libraries/1000hz-bootstrap-validator -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.9/validator.min.js"></script>
+	
+	<!-- End of Script Source Files -->
+
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body>
 </html>
